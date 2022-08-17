@@ -37,14 +37,17 @@ nav {
 #navlink a {
     padding: 0 5px;
     text-decoration: none;
+    color: #fff;
 }
 #clientname {
     font-size: 25px;
     font-weight: bold;
-    color: #bbbbbb;
     position: absolute;
-    top: 8px;
-    left: 45%;
+    width: 100%;
+    top: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
 }
 #icon {
     width: 75px;
@@ -56,17 +59,22 @@ nav {
     border-radius: 25%;
     border: 2px solid #fff;
 }
-#navlink:hover {
-    background-color: #fff;
+#navlink a:link {
     color: #fff;
+    text-decoration: none;
 }
-#navlink:active {
-    background-color: #fff;
+#navlink a:visited {
     color: #fff;
+    text-decoration: none;
 }
-#navlink:focus {
-    background-color: #fff;
+#navlink a:hover {
+    color: #bbbbbb;
+    transition: color 250ms ease-in;
+    text-decoration: none;
+}
+#navlink a:active {
     color: #fff;
+    text-decoration: none;
 }
 
 
@@ -86,6 +94,7 @@ nav {
     position: absolute;
     left: 0;
     height: 55px;
+    bottom: 0;
 }
 
 
