@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/scrollbar.css" rel="stylesheet">
 
     <script src="js/utils.js"></script>
     <script src="js/main.js"></script>
@@ -24,7 +25,7 @@
 
         <div id="navlink">
             <a href="#" class="active">Home</a>
-            <a href="about.html">About</a>
+            <a href="changelog.html">Changelog</a>
             <a href="contact.html">Contact</a>
         </div>
     </div>
@@ -36,15 +37,46 @@
 
 
     <div class="body">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br> <!-- this is needed to space the body content from the top -->
+
+        <div class="showcase">
+            <h1>Showcase</h1>
+            <!-- TODO: Showcase -->
+        </div>
+
+
+        <div class="developers">
+            <h1>Developers</h1>
+
+            <div id="captiosus">
+                <h1>Captiosus</h1>
+                <!-- TODO: Description -->
+            </div>
+            <div id="terrificTable">
+                <h1>TerrificTable</h1>
+                <!-- TODO: Description -->
+            </div>
+        </div>
+
+
+        <!--
+        <div class="credits">
+            <div id="gamrboy4life">
+                <h3>Gamrboy4life</h3>
+                <p>The original Client base</p>
+            </div>
+        </div>
+        -->
     </div>
 
 
     <div class="footer">
-        <p id="copyright">NoWay Development</p>
+        <p id="copyright"></p>
     </div>
 
     <script src="js/copyright.js"></script>
+    <script>
+        generateDevelopers();
+    </script>
 
 </body>
 </html>
