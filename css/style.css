@@ -10,7 +10,8 @@
     --nav-link-color: #dadada;
     --nav-link-color-visited: var(--nav-link-color);
     --nav-link-color-active: #9fffdf;
-    --nav-link-color-hover: #9b9b9b;
+    --nav-link-color-hover: #e5e5e5;
+    --nav-link-color-hover-glow: #9fffdf;
 
     --client-name-color: #fff;
 }
@@ -91,6 +92,9 @@ nav {
     color: var(--nav-link-color-hover);
     transition: color 250ms ease-in;
     text-decoration: none;
+    -moz-animation: select_glow 1s ease-in-out infinite alternate;
+    -webkit-animation: select_glow 1s ease-in-out infinite alternate;
+    animation: select_glow 1s ease-in-out infinite alternate;
 }
 #navlink a.active {
     color: var(--nav-link-color-active);
@@ -105,6 +109,14 @@ nav {
     }
     to {
         text-shadow: 0 0 15px var(--nav-link-color-active), 0 0 25px var(--nav-link-color-active);
+    }
+}
+@-webkit-keyframes select_glow {
+    from {
+        text-shadow: 0 0 5px var(--nav-link-color-hover-glow), 0 0 15px var(--nav-link-color-hover-glow);
+    }
+    to {
+        text-shadow: 0 0 10px var(--nav-link-color-hover-glow), 0 0 20px var(--nav-link-color-hover-glow);
     }
 }
 /* NAV/TOP BAR */
