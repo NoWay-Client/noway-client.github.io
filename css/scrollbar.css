@@ -1,0 +1,20 @@
+:root {
+    --scrollbar-width: 5px;
+
+    --scrollbar-color: #dedede;
+    --thub-generall-color: #6e6e6e;
+}
+
+::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+}
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--thub-generall-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--thub-generall-color);
+}
+
