@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
@@ -14,6 +15,10 @@
     --nav-link-color-hover-glow: #9fffdf;
 
     --client-name-color: #fff;
+
+    --developer-name-color: #000;
+    --developer-name-color-hover: #675959;
+    --developer-description-color: #414141;
 }
 /* VARIABLES */
 
@@ -21,7 +26,8 @@
 
 /* EVERYTHING */
 * {
-    font-family: 'Poppins', 'Font Awesome 5 Free', sans-serif;
+    font-family: 'Comfortaa',   'Font Awesome 5 Free',  cursive;
+    font-family: 'Poppins',     'Font Awesome 5 Free',  sans-serif;
 }
 
 body {
@@ -171,6 +177,88 @@ nav {
     height: 100%;
     background-color: var(--main-bg-color);
 }
+
+/* << Developer Panels >> */
+#dev-title {
+    font-size: 60px;
+    line-height: 0;
+    text-align: center;
+    color: #fff;
+}
+.devs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2d;
+}
+
+.developers {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.developer {
+    display: inline-block;
+    margin: 1em;
+    position: relative;
+    padding: 1em;
+    background: #efefef;
+    text-align: center;
+    border-radius: 1em;
+    width: 205px;  /* When adding Discord Tags to names */
+    transition: transform .2s, box-shadow .2s;
+}
+.developer:hover {
+    box-shadow: 5px 5px 15px #333333;
+    transform: scale(1.07);
+}
+.developer img {
+    border-radius: 1em;
+    transition: box-shadow .2s;
+}
+.developer img:hover {
+    box-shadow: 3px 3px 8px #333333;
+}
+.developer h3 {
+    line-height: 0;
+}
+.developer h3 a {
+    text-decoration: none;
+    color: var(--developer-name-color);
+    transition: color 0.3s, transform .3s;
+}
+.developer h3 a:hover {
+    color: var(--developer-name-color-hover);
+}
+.dc-tag {
+    font-size: 15px;
+    position: absolute;
+    top: 184px;
+    color: #3a3a3a;
+}
+.developer h4 {
+    line-height: 15px;
+    color: var(--developer-description-color);
+}
+/* << Developer Panels >> */
+
+/* << Showcase >> */
+#showcase-title {
+    text-align: center;
+    font-size: 60px;
+    line-height: 0;
+    color: #000;
+}
+.showcase {
+
+}
+/* << Showcase >> */
+
 
 /* ....... */
 
