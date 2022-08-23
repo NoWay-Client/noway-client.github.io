@@ -1,0 +1,49 @@
+.features {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    height: 500px;
+}
+.features-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.some_number_in_a_red_box {
+    display: inline-block;
+    margin: 1em;
+    position: relative;
+    padding: 1em;
+    background: #efefef;
+    text-align: center;
+    border-radius: 1em;
+    width: 205px;  /* When adding Discord Tags to names */
+    height: 240px;
+    transition: transform .2s, box-shadow .2s;
+}
+.some_number_in_a_red_box::after {
+    content: attr(data-cout);
+
+    position: absolute;
+    width: 50px;
+    height: 50px;
+
+    top: -10px;
+    right: -10px;
+
+    font-size: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #ff0000;
+    color: #fff;
+}
