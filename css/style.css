@@ -107,6 +107,7 @@ nav {
     -moz-animation: select_glow 1s ease-in-out infinite alternate;
     -webkit-animation: select_glow 1s ease-in-out infinite alternate;
     animation: select_glow 1s ease-in-out infinite alternate;
+    cursor: pointer;
 }
 #navlink a:link {
     color: var(--nav-link-color);
