@@ -7,8 +7,8 @@
 /* VARIABLES */
 :root {
     --main-bg-color: #e1e1e1;
-    --dark-bg-color: #000213;
-    --dark-bg-color-top: #000;
+    --dark-bg-color: #000;
+    --dark-bg-color-top: #111;
 
     --nav-link-color: #dadada;
     --nav-link-color-visited: var(--nav-link-color);
@@ -18,7 +18,7 @@
 
     --client-name-color: #fff;
 
-    --developer-name-color: #000;
+    --developer-name-color: #1e1e1e;
     --developer-name-color-hover: #949494;
     --developer-description-color: #414141;
 }
@@ -156,6 +156,9 @@ nav {
     left: 50%;
     transform: translateX(-50%);
     top: 135px;
+    height: 0;
+
+    color: var(--main-bg-color);
 
     font-size: 2em;
     z-index: -1;
@@ -167,11 +170,11 @@ nav {
     right: 0;
     width: 100%;
     height: 500px;
-    /* background-color: #ccc; */
-    background-image: url("https://captiosus.carrd.co/assets/images/bg.jpg?v=26bf156e");
+    background-color: #1e1d1e;
+    /* background-image: url("https://captiosus.carrd.co/assets/images/bg.jpg?v=26bf156e");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;  */
     z-index: -1;
 }
 /* HEADER */
@@ -227,7 +230,7 @@ nav {
     align-content: center;
     margin: 0;
     padding: 0;
-    background-color: #1e1e2d;
+    background-color: #101010;
     height: 500px;
 }
 
